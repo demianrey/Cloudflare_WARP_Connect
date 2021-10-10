@@ -8,23 +8,23 @@
 
 `CentOS7/8(vps仅提供ipv4网络):`
 ```
-curl https://raw.githubusercontent.com/HXHGTS/Add-Netflix_Support/main/netflix_support.sh | sh
+curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netflix_support.sh | sh
 ```
 
 `Debian/Ubuntu(vps仅提供ipv4网络):`
 ```
 curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/KernelUpdate_debian10.sh | sh
-curl https://raw.githubusercontent.com/HXHGTS/Add-Netflix_Support/main/netflix_support_debian.sh | sh
+curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netflix_support_debian.sh | sh
 ```
 
 `CentOS7/8(vps仅提供ipv6网络):`
 ```
-curl https://raw.githubusercontent.com/HXHGTS/Add-Netflix_Support/main/netflix_support_ipv6.sh | sh
+curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netflix_support_ipv6.sh | sh
 ```
 
 `Debian/Ubuntu(vps仅提供ipv6网络):`
 ```
-curl https://raw.githubusercontent.com/HXHGTS/Add-Netflix_Support/main/netflix_support_debian_ipv6.sh | sh
+curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netflix_support_debian_ipv6.sh | sh
 ```
 
 2.在`/usr/local/etc/xray`文件夹或`/usr/local/etc/v2ray`中找到配置文件`config.json`并按仓库中[模板格式](https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/config.json)修改
