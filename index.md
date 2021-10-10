@@ -13,7 +13,7 @@ curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netfl
 
 `Debian/Ubuntu(vps仅提供ipv4网络):`
 ```
-curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/KernelUpdate_debian10.sh | sh
+curl https://raw.githubusercontent.com/HXHGTS/TCPOptimization/master/KernelUpdate_debian10.sh | sh
 curl https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/netflix_support_debian.sh | sh
 ```
 
