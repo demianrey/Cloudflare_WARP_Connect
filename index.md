@@ -4,6 +4,11 @@
 
 需要配合v2ray/xray出口规则修改，原生ip请忽略！
 
+流媒体检测脚本:
+```
+bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+```
+
 1.脚本运行:
 
 `CentOS7/8(vps仅提供ipv4网络):`
