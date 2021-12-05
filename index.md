@@ -2,9 +2,9 @@
 
 警告⚠:目前此方法解锁Netflix需要强制IPV4出口并刷出特定出口ip(美区除外)，配合v2ray/xray出口规则修改，原生ip请忽略！
 
-流媒体检测脚本:
+流媒体检测脚本(基于[lmc999流媒体检测脚本](https://github.com/lmc999/RegionRestrictionCheck)修改而来，适用于本项目出口ip检测):
 ```
-bash <(curl -L -s https://raw.githubusercontent.com/lmc999/RegionRestrictionCheck/main/check.sh)
+echo 0 | bash <(curl -L -s https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/check.sh)
 ```
 
 1.脚本运行:
@@ -35,11 +35,16 @@ bash <(curl -L -s https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Conne
 3.应该可以正常使用了
 
 warp关闭:
-`systemctl stop wg-quick@wgcf && systemctl disable wg-quick@wgcf && systemctl status wg-quick@wgcf`
+```
+systemctl stop wg-quick@wgcf && systemctl disable wg-quick@wgcf && systemctl status wg-quick@wgcf
+```
 
 warp启动:
-`systemctl start wg-quick@wgcf && systemctl enable wg-quick@wgcf && systemctl status wg-quick@wgcf`
+```
+systemctl start wg-quick@wgcf && systemctl enable wg-quick@wgcf && systemctl status wg-quick@wgcf
+```
 
 warp重启/切换出口ip:
-`systemctl restart wg-quick@wgcf && systemctl status wg-quick@wgcf`
-
+```
+systemctl restart wg-quick@wgcf && echo 0 | bash <(curl -L -s https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/check.sh)
+```
