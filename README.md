@@ -7,11 +7,10 @@
 echo 1 | bash <(curl -L -s https://raw.githubusercontent.com/HXHGTS/Cloudflare_WARP_Connect/main/check.sh) -M 4
 ```
 AGREGAR REPOSITORIO WARP
-
+```
 sudo sh -c "echo 'deb http://deb.debian.org/debian buster-backports main contrib non-free' > /etc/apt/sources.list.d/buster-backports.list"
-
 apt update
-
+```
 1.脚本运行:
 
 `CentOS7(vps仅提供ipv4网络):`
